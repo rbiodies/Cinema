@@ -1,4 +1,4 @@
-package edu.school21.cinema.servlets;
+package edu.school21.cinema.controllers;
 
 import edu.school21.cinema.models.Film;
 import edu.school21.cinema.models.Hall;

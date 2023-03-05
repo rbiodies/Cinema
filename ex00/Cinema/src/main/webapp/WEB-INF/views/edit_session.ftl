@@ -1,13 +1,6 @@
-<%@ taglib prefix="form" uri="http://www.springframework.org/tags/form" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: 20228428
-  Date: 01.03.2023
-  Time: 18:29
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" %>
-<html>
+<#import "/spring.ftl" as spring/>
+
+<html lang="">
 <head>
     <title>Edit Session</title>
 </head>
@@ -19,24 +12,24 @@
             <tr>
                 <td>ID: </td>
                 <td>${session.id}
-                    <form:hidden path="id"/>
+                    <@spring.formHiddenInput "session.id" ""/>
                 </td>
             </tr>
             <tr>
                 <td>Movie: </td>
-                <td><form:input path="film" /></td>
+                <td><@spring.formInput "session.film" "" "text"/></td>
             </tr>
             <tr>
                 <td>Movie hall: </td>
-                <td><form:input path="hall" /></td>
+                <td><@spring.formInput "session.hall" "" "text"/></td>
             </tr>
             <tr>
                 <td>Time: </td>
-                <td><form:input path="time" /></td>
+                <td><@spring.formInput "session.time" "" "text"/></td>
             </tr>
             <tr>
                 <td>Ticket host: </td>
-                <td><form:input path="ticketCost" /></td>
+                <td><@spring.formInput "session.ticketCost" "" "text"/></td>
             </tr>
             <tr>
                 <td colspan="2"><input type="submit" value="Save"></td>

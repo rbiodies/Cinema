@@ -1,13 +1,4 @@
-<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
-<%--
-  Created by IntelliJ IDEA.
-  User: 20228428
-  Date: 28.02.2023
-  Time: 22:18
-  To change this template use File | Settings | File Templates.
---%>
-<%@ page contentType="text/html;charset=UTF-8" %>
-<html>
+<html lang="">
 <head>
     <title>Admin Manager</title>
     <style>

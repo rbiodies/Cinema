@@ -1,4 +1,4 @@
-package edu.school21.cinema.servlets;
+package edu.school21.cinema.controllers;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;

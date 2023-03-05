@@ -1,4 +1,4 @@
-package edu.school21.cinema.servlets;
+package edu.school21.cinema.controllers;
 
 import edu.school21.cinema.models.Session;
 import edu.school21.cinema.services.SessionService;
@@ -43,7 +43,7 @@ public class SessionController {
 
     @RequestMapping("/edit")
     public ModelAndView editCustomerForm(@RequestParam long id) {
-        ModelAndView mav = new ModelAndView("edit_session");
+        ModelAndView mav = new ModelAndView("edit_session.ftl");
         Session session = sessionService.findById(id);
         mav.addObject("session", session);
 

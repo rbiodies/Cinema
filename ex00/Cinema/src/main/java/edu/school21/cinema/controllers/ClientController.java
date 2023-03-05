@@ -1,4 +1,4 @@
-package edu.school21.cinema.servlets;
+package edu.school21.cinema.controllers;
 
 import edu.school21.cinema.models.Data;
 import edu.school21.cinema.models.Image;
@@ -50,8 +50,8 @@ public class ClientController {
         List<Image> resultImages = imageService.findAllByUserId(user.getId());
         ModelAndView mav = new ModelAndView("profile");
         mav.addObject("user", user);
-        mav.addObject("resultData", resultData);
-        mav.addObject("resultImages", resultImages);
+        mav.addObject("data", resultData);
+        mav.addObject("image", resultImages);
 
         return mav;
     }
