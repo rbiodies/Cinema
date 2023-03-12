@@ -52,4 +52,14 @@ public class SessionServiceImpl implements SessionService {
         return repo.search(keyword);
     }
 
+    @Override
+    public void deleteByHallId(Long id) {
+        repo.deleteByHallId(id);
+    }
+
+    @Override
+    public void deleteByFilmId(Long id) {
+        repo.deleteByFilmId(id);
+    }
+
 }

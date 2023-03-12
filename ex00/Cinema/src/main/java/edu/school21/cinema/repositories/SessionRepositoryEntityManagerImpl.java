@@ -65,4 +65,20 @@ public class SessionRepositoryEntityManagerImpl implements SessionRepository {
                 .setParameter(1, keyword)
                 .getResultList();
     }
+
+    @Override
+    @Transactional
+    public void deleteByHallId(Long id) {
+        entityManager.createQuery("delete from Session where hall.id = :id")
+                .setParameter("id", id)
+                .executeUpdate();
+    }
+
+    @Override
+    @Transactional
+    public void deleteByFilmId(Long id) {
+        entityManager.createQuery("delete from Session where film.id = :id")
+                .setParameter("id", id)
+                .executeUpdate();
+    }
 }
