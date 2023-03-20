@@ -18,7 +18,7 @@
                 <td>${session.id}</td>
                 <td>${session.hall}</td>
                 <td>${session.film}</td>
-                <td>${session.time}</td>
+                <td>${session.dateTime}</td>
                 <td>${session.ticketCost}</td>
             </tr>
         </#list>

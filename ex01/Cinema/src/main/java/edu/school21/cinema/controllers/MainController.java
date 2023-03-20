@@ -54,13 +54,13 @@ public class MainController {
         return "signIn";
     }
 
-    @RequestMapping(value = "/search", method = RequestMethod.POST)
+    @RequestMapping(value = "/check", method = RequestMethod.POST)
     public String signInSearch(HttpServletRequest request, User userModel) {
         if (Objects.equals(userModel.getEmail(), "admin") && Objects.equals(userModel.getPassword(), "admin")) {
             return "admin";
         }
         User user = userService.findByEmailAndPassword(userModel.getEmail(), userModel.getPassword());
-        if (user == null) {
+        if (user != null) {
             return "redirect:/form";
         }
         request.getSession().setAttribute("user", user);

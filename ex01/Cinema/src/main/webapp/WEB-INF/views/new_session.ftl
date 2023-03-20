@@ -19,7 +19,7 @@
             </tr>
             <tr>
                 <td>Time: </td>
-                <td><@spring.formInput "session.time" "" "text"/></td>
+                <td><@spring.formInput "session.dateTime" "" "text"/></td>
             </tr>
             <tr>
                 <td>Ticket cost: </td>

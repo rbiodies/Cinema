@@ -15,7 +15,7 @@ public class Image {
     private String fileName;
     private String size;
     private String mime;
-    private String uniqueName;
+    private String url;
 
     public User getUser() {
         return user;
@@ -28,12 +28,12 @@ public class Image {
     public Image() {
     }
 
-    public Image(User user, String fileName, String size, String mime, String uniqueName) {
+    public Image(User user, String fileName, String size, String mime, String url) {
         this.user = user;
         this.fileName = fileName;
         this.size = size;
         this.mime = mime;
-        this.uniqueName = uniqueName;
+        this.url = url;
     }
 
     public Long getId() {
@@ -68,11 +68,11 @@ public class Image {
         this.mime = mime;
     }
 
-    public String getUniqueName() {
-        return uniqueName;
+    public String getUrl() {
+        return url;
     }
 
-    public void setUniqueName(String uniqueName) {
-        this.uniqueName = uniqueName;
+    public void setUrl(String url) {
+        this.url = url;
     }
 }

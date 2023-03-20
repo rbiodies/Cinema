@@ -15,7 +15,7 @@ public class Session {
     @ManyToOne
     @JoinColumn(name = "film_id")
     private Film film;
-    private String time;
+    private String dateTime;
     private String ticketCost;
 
     public Hall getHall() {
@@ -37,10 +37,10 @@ public class Session {
     public Session() {
     }
 
-    public Session(Hall hall, Film film, String time, String ticketCost) {
+    public Session(Hall hall, Film film, String dateTime, String ticketCost) {
         this.hall = hall;
         this.film = film;
-        this.time = time;
+        this.dateTime = dateTime;
         this.ticketCost = ticketCost;
     }
 
@@ -52,12 +52,12 @@ public class Session {
         this.id = id;
     }
 
-    public String getTime() {
-        return time;
+    public String getDateTime() {
+        return dateTime;
     }
 
-    public void setTime(String time) {
-        this.time = time;
+    public void setDateTime(String dateTime) {
+        this.dateTime = dateTime;
     }
 
     public String getTicketCost() {

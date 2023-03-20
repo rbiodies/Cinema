@@ -55,7 +55,7 @@ public class ClientController {
         if (file != null) {
             String originalFileName = file.getOriginalFilename();
             if (originalFileName != null) {
-                String fileName = UUID.randomUUID() + originalFileName.substring(originalFileName.lastIndexOf("."));
+                String fileName = "images" + File.separator + UUID.randomUUID() + originalFileName.substring(originalFileName.lastIndexOf("."));
                 Image image = new Image(user, originalFileName, getSize(file), file.getContentType(), fileName);
                 File filePath = new File(myProperty);
                 if (!filePath.exists()){
@@ -63,7 +63,7 @@ public class ClientController {
                 }
                 try {
                     file.transferTo(new File(System.getProperty("user.dir") + File.separator + filePath + File.separator + fileName));
-                    user.setAvatar(fileName);
+                    user.setAvatarUrl(fileName);
                     userService.update(user);
                     imageService.save(image);
                 } catch (IOException e) {

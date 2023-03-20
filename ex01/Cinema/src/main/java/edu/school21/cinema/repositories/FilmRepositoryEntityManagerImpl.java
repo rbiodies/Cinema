@@ -60,7 +60,7 @@ public class FilmRepositoryEntityManagerImpl implements FilmRepository {
 
     @Override
     public List search(String keyword) {
-        return entityManager.createQuery("SELECT f FROM Film f WHERE f.title LIKE ?1"
+        return entityManager.createQuery("SELECT f FROM Film f WHERE f.name LIKE ?1"
                         + " OR f.yearOfRelease LIKE ?1"
                         + " OR f.ageRestrictions LIKE ?1"
                         + " OR f.description LIKE ?1")

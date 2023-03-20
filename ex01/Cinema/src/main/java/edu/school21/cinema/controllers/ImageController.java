@@ -19,7 +19,7 @@ public class ImageController {
     public void showImage(@PathVariable("fileName") String fileName,
                           @PathVariable("suffix") String suffix,
                           HttpServletResponse response) {
-        File file = new File(System.getProperty("user.dir") + File.separator + myProperty + File.separator + fileName + "." + suffix);
+        File file = new File(System.getProperty("user.dir") + File.separator + myProperty + File.separator + "images" + File.separator + fileName + "." + suffix);
         responseFile(response, file);
     }
 

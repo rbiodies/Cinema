@@ -6,6 +6,7 @@ import org.springframework.transaction.annotation.Transactional;
 
 import javax.persistence.EntityManager;
 import javax.persistence.EntityNotFoundException;
+import javax.persistence.NoResultException;
 import javax.persistence.PersistenceContext;
 import java.util.List;
 
@@ -60,7 +61,11 @@ public class UserRepositoryEntityManagerImpl implements UserRepository {
 
     @Override
     public User findByEmail(String email) {
-        return (User) entityManager.createQuery("SELECT user from User user where user.email = ?1").setParameter(1, email).getSingleResult();
+        try {
+            return (User) entityManager.createQuery("SELECT user from User user where user.email = ?1").setParameter(1, email).getSingleResult();
+        } catch (NoResultException nre) {
+            return null;
+        }
     }
 
     @Override

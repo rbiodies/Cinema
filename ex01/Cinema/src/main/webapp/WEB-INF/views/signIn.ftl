@@ -15,7 +15,7 @@
 <body>
 <div align="center">
     <h2>User Form</h2>
-    <form name="user" action="search" method="POST">
+    <form name="user" action="check" method="POST">
             <@spring.formInput "user.email" "" "text"/>
             <@spring.formPasswordInput "user.password" ""/>
         <input type="submit" value="Submit" />

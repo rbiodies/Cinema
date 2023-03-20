@@ -1,6 +1,6 @@
 <html lang="">
 <head>
-    <title>Admin Manager</title>
+    <title>Manager</title>
     <style>
         body {
             position: absolute;
@@ -12,7 +12,7 @@
 </head>
 <body>
 <div align="center">
-    <h2>Admin Manager</h2>
+    <h2>Manager</h2>
     <input type="button" style="width: 150px; height: 50px;" onclick="location.href='admin/panel';" value="Settings" />
     <input type="button" style="width: 150px; height: 50px;" onclick="location.href='/';" value="Log out" />
 </div>

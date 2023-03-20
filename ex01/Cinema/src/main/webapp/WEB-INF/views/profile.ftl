@@ -24,7 +24,7 @@
         </#list>
     </table>
 
-    <img src="/images/${(user.avatar)!}" alt=""/>
+    <img src="/${(user.avatarUrl)!}" alt=""/>
 
     <form method="post" action="client/upload" enctype="multipart/form-data" modelAttribute="user">
         Choose a file: <input type="file" name="fileUpload" />
@@ -43,7 +43,7 @@
         </tr>
         <#list images as image>
             <tr>
-                <td><a href="/images/${image.uniqueName}">${image.fileName}</a></td>
+                <td><a href="/${(image.url)!}">${image.fileName}</a></td>
                 <td>${image.size}</td>
                 <td>${image.mime}</td>
             </tr>

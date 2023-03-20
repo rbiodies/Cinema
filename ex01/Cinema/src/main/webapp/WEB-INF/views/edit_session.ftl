@@ -7,7 +7,7 @@
 <body>
 <div align="center">
     <h2>Edit Session</h2>
-    <form:form action="save" method="post" modelAttribute="session">
+    <form action="save" method="post" modelAttribute="session">
         <table border="0" cellpadding="5">
             <tr>
                 <td>ID: </td>
@@ -35,7 +35,7 @@
                 <td colspan="2"><input type="submit" value="Save"></td>
             </tr>
         </table>
-    </form:form>
+    </form>
 </div>
 </body>
 </html>

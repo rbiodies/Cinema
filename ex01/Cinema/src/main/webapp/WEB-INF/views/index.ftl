@@ -15,6 +15,7 @@
     <h2>Main</h2>
     <input type="button" style="width: 150px; height: 50px;" onclick="location.href='form';" value="Log in" />
     <input type="button" style="width: 150px; height: 50px;" onclick="location.href='new';" value="Sign up" />
+    <input type="button" style="width: 150px; height: 50px;" onclick="location.href='sessions';" value="Sessions" />
 </div>
 </body>
 </html>

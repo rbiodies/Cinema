@@ -13,7 +13,7 @@ CREATE TABLE IF NOT EXISTS users (
     phoneNumber     TEXT NOT NULL,
     email           TEXT NOT NULL,
     password        TEXT,
-    avatar          TEXT
+    avatarUrl       TEXT
 );
 
 CREATE TABLE IF NOT EXISTS data (
@@ -30,7 +30,7 @@ CREATE TABLE IF NOT EXISTS images (
     filename        TEXT NOT NULL,
     size            TEXT NOT NULL,
     mime            TEXT NOT NULL,
-    uniqueName      TEXT NOT NULL
+    url             TEXT
 );
 
 CREATE TABLE IF NOT EXISTS halls (
@@ -41,17 +41,17 @@ CREATE TABLE IF NOT EXISTS halls (
 
 CREATE TABLE IF NOT EXISTS films (
     id              INTEGER PRIMARY KEY,
-    title           TEXT NOT NULL,
+    name            TEXT NOT NULL,
     yearOfRelease   TEXT NOT NULL,
     ageRestrictions TEXT NOT NULL,
     description     TEXT NOT NULL,
-    poster          TEXT
+    posterUrl       TEXT
 );
 
 CREATE TABLE IF NOT EXISTS sessions (
     id              INTEGER PRIMARY KEY,
     hall_id         INTEGER NOT NULL REFERENCES halls(id),
     film_id         INTEGER NOT NULL REFERENCES films(id),
-    time            TIMESTAMP,
+    dateTime        TIMESTAMP,
     ticketCost      TEXT NOT NULL
 );

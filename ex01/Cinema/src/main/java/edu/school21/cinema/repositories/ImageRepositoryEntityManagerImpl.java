@@ -70,7 +70,7 @@ public class ImageRepositoryEntityManagerImpl implements ImageRepository {
         return entityManager.createQuery("SELECT i FROM Image i WHERE i.fileName LIKE ?1"
                         + " OR i.size LIKE ?1"
                         + " OR i.mime LIKE ?1"
-                        + " OR i.uniqueName LIKE ?1")
+                        + " OR i.url LIKE ?1")
                 .setParameter(1, keyword)
                 .getResultList();
     }

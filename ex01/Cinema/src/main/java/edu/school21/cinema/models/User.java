@@ -14,7 +14,7 @@ public class User {
     private String phoneNumber;
     private String email;
     private String password;
-    private String avatar;
+    private String avatarUrl;
 
     public User() {
     }
@@ -75,11 +75,11 @@ public class User {
         this.password = password;
     }
 
-    public String getAvatar() {
-        return avatar;
+    public String getAvatarUrl() {
+        return avatarUrl;
     }
 
-    public void setAvatar(String avatar) {
-        this.avatar = avatar;
+    public void setAvatarUrl(String avatarUrl) {
+        this.avatarUrl = avatarUrl;
     }
 }

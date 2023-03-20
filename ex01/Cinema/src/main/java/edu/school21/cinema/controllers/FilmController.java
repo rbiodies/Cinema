@@ -52,14 +52,14 @@ public class FilmController {
         if (file != null) {
             String originalFileName = file.getOriginalFilename();
             if (originalFileName != null) {
-                String fileName = UUID.randomUUID() + originalFileName.substring(originalFileName.lastIndexOf("."));
+                String fileName = "images" + File.separator + UUID.randomUUID() + originalFileName.substring(originalFileName.lastIndexOf("."));
                 File filePath = new File(myProperty);
-                if (!filePath.exists()){
+                if (!(filePath).exists()){
                     filePath.mkdirs();
                 }
                 try {
                     file.transferTo(new File(System.getProperty("user.dir") + File.separator + filePath + File.separator + fileName));
-                    film.setPoster(fileName);
+                    film.setPosterUrl(fileName);
                     filmService.save(film);
                 } catch (IOException e) {
                     e.printStackTrace();

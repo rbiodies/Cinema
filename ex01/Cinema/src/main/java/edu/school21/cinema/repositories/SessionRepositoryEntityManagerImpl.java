@@ -60,7 +60,7 @@ public class SessionRepositoryEntityManagerImpl implements SessionRepository {
 
     @Override
     public List search(String keyword) {
-        return entityManager.createQuery("SELECT s FROM Session s WHERE s.time LIKE ?1"
+        return entityManager.createQuery("SELECT s FROM Session s WHERE s.dateTime LIKE ?1"
                         + " OR s.ticketCost LIKE ?1")
                 .setParameter(1, keyword)
                 .getResultList();
@@ -84,8 +84,8 @@ public class SessionRepositoryEntityManagerImpl implements SessionRepository {
 
     @Override
     public List findByFilmName(String filmName) {
-        return entityManager.createQuery("SELECT s FROM Session s WHERE s.film.title LIKE ?1")
-                .setParameter(1, filmName)
+        return entityManager.createQuery("SELECT s FROM Session s WHERE s.film.name LIKE ?1")
+                .setParameter(1, filmName + "%")
                 .getResultList();
     }
 }
