@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.ModelAttribute;
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.servlet.ModelAndView;
@@ -60,11 +61,10 @@ public class MainController {
             return "admin";
         }
         User user = userService.findByEmailAndPassword(userModel.getEmail(), userModel.getPassword());
-        if (user == null) {
-            return "redirect:/form";
+        if (user != null) {
+            request.getSession().setAttribute("user", user);
+            dataService.save(new Data(user, getClientDate(), getClientTime(), getClientIP(request)));
         }
-        request.getSession().setAttribute("user", user);
-        dataService.save(new Data(user, getClientDate(), getClientTime(), getClientIP(request)));
 
         return "redirect:/client";
     }
@@ -90,5 +90,10 @@ public class MainController {
             ip = LOCALHOST_v4;
         }
         return ip;
+    }
+
+    @RequestMapping("/chat/{film-id}")
+    public String showMovie(@PathVariable("film-id") String parameter) {
+        return "chat";
     }
 }
