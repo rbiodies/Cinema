@@ -14,5 +14,8 @@ master **Hibernate** framework.
 - [ex02: Chat room with a discussion](https://github.com/rbiodies/Cinema/tree/main/ex02/Cinema)
 ## Usage
 ```
+cd ex02/Cinema
+mvn clean install
+open http://localhost:8080
 ```
 ## Examples
