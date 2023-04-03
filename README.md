@@ -10,9 +10,9 @@ MVC (Model, View, Controller) is a classic web application design model.
 
 The jQuery library has a full suite of Ajax (Asynchronous Javascript and XML) capabilities. The functions and methods therein allow us to load data from the server without a browser page refresh.
 ## Descriptions
-- [ex00: Movie theater administrator functionality using Spring MVC mechanisms](https://github.com/rbiodies/Cinema/tree/main/ex00/Cinema)
+- [ex00: Movie theater administrator functionality using Spring MVC mechanisms](https://github.com/rbiodies/Cinema/tree/master/ex00/Cinema)
 - [ex01: AJAX request to get a list of all shows according to a search query](https://github.com/rbiodies/Cinema/tree/master/ex01/Cinema)
-- [ex02: Chat room with a discussion](https://github.com/rbiodies/Cinema/tree/main/ex02/Cinema)
+- [ex02: Chat room with a discussion](https://github.com/rbiodies/Cinema/tree/master/ex02/Cinema)
 ## Usage
 ```
 cd ex02/Cinema
