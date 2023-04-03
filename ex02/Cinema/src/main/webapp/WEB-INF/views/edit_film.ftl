@@ -17,7 +17,7 @@
             </tr>
             <tr>
                 <td>Title: </td>
-                <td><@spring.formInput "film.title" "" "text"/></td>
+                <td><@spring.formInput "film.name" "" "text"/></td>
             </tr>
             <tr>
                 <td>Year of release: </td>
