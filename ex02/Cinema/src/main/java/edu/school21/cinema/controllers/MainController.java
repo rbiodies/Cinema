@@ -58,7 +58,7 @@ public class MainController {
     @RequestMapping(value = "/check", method = RequestMethod.POST)
     public String signInSearch(HttpServletRequest request, User userModel) {
         if (Objects.equals(userModel.getEmail(), "admin") && Objects.equals(userModel.getPassword(), "admin")) {
-            return "admin";
+            return "redirect:/admin";
         }
         User user = userService.findByEmailAndPassword(userModel.getEmail(), userModel.getPassword());
         if (user != null) {

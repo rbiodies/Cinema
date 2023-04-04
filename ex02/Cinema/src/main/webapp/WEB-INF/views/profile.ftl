@@ -1,6 +1,14 @@
 <html lang="">
 <head>
     <title>User</title>
+    <style>
+        .avatar {
+            width: 200px;
+            height: 200px;
+            object-fit:cover;
+            border-radius:50%;
+        }
+    </style>
 </head>
 <body>
 <div align="center">
@@ -24,12 +32,14 @@
         </#list>
     </table>
 
-    <img src="/${(user.avatarUrl)!}" alt=""/>
+    <img src="/${(user.avatarUrl)!}" alt="" class="avatar"/>
 
     <form method="post" action="upload" enctype="multipart/form-data" modelAttribute="user">
         Choose a file: <input type="file" name="fileUpload" />
         <input type="submit" value="Upload" />
     </form>
+
+    <input type="button" onclick="location.href='/client';" value="Menu" />
 
     <form name="profileForm" action="logout" method="POST">
         <input type="submit" value="Log out" name="exit"/>
