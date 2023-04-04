@@ -21,5 +21,5 @@ cd ex02/Cinema
 mvn clean install
 open http://localhost:8080
 ```
-## Examples
+## Example
 https://user-images.githubusercontent.com/90090114/229898810-6e0e925c-9c6a-4663-bd39-41e90c7e78dd.mov
