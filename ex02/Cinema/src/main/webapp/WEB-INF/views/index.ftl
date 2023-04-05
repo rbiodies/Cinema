@@ -3,6 +3,7 @@
     <title>Main</title>
     <style>
         body {
+            background: linear-gradient(to top, #2639fa, #c9d1ff);
             position: absolute;
             top: 50%;
             left: 50%;
