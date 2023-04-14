@@ -62,12 +62,12 @@ public class ClientController {
             if (originalFileName != null) {
                 String fileName = "images" + File.separator + UUID.randomUUID() + originalFileName.substring(originalFileName.lastIndexOf("."));
                 Image image = new Image(user, originalFileName, getSize(file), file.getContentType(), fileName);
-                File filePath = new File(myProperty);
+                File filePath = new File(myProperty + File.separator + "images");
                 if (!filePath.exists()){
                     filePath.mkdirs();
                 }
                 try {
-                    file.transferTo(new File(System.getProperty("user.dir") + File.separator + filePath + File.separator + fileName));
+                    file.transferTo(new File(System.getProperty("user.dir") + File.separator + myProperty + File.separator + fileName));
                     user.setAvatarUrl(fileName);
                     userService.update(user);
                     imageService.save(image);
