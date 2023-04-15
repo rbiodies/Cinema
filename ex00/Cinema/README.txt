@@ -18,7 +18,7 @@ mvn clean install
 
 # To open a website from the console, use the command
 
-open http://localhost:8080
+# open http://localhost:8080
 
 # Then to run the web application, use the command
 

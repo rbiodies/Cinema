@@ -16,7 +16,7 @@
         <#list films as film>
             <tr>
                 <td>${film.id}</td>
-                <td>${film.title}</td>
+                <td>${film.name}</td>
                 <td>${film.yearOfRelease}</td>
                 <td>${film.ageRestrictions}</td>
                 <td>${film.description}</td>

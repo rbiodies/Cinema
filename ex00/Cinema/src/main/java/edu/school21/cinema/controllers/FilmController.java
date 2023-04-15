@@ -52,7 +52,7 @@ public class FilmController {
         if (file != null) {
             String originalFileName = file.getOriginalFilename();
             if (originalFileName != null) {
-                String fileName = UUID.randomUUID() + originalFileName.substring(originalFileName.lastIndexOf("."));
+                String fileName = "images" + File.separator + UUID.randomUUID() + originalFileName.substring(originalFileName.lastIndexOf("."));
                 File filePath = new File(myProperty);
                 if (!filePath.exists()){
                     filePath.mkdirs();

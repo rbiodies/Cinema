@@ -41,7 +41,7 @@ CREATE TABLE IF NOT EXISTS halls (
 
 CREATE TABLE IF NOT EXISTS films (
     id              INTEGER PRIMARY KEY,
-    title           TEXT NOT NULL,
+    name            TEXT NOT NULL,
     yearOfRelease   TEXT NOT NULL,
     ageRestrictions TEXT NOT NULL,
     description     TEXT NOT NULL,

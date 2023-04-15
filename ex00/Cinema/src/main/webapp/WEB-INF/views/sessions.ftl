@@ -35,12 +35,12 @@
                 <td>${session.hall.serialNumber}</td>
                 <td>${session.hall.numberOfSeats}</td>
                 <td>${session.film.id}</td>
-                <td>${session.film.title}</td>
+                <td>${session.film.name}</td>
                 <td>${session.film.yearOfRelease}</td>
                 <td>${session.film.ageRestrictions}</td>
                 <td>${session.film.description}</td>
                 <td>
-                    <img src="/images/${(session.film.poster)!}" style="width:100px; height: 100px;" alt=""/>
+                    <img src="/${(session.film.poster)!}" style="width:100px; height: 100px;" alt=""/>
                 </td>
                 <td>${session.time}</td>
                 <td>${session.ticketCost}</td>

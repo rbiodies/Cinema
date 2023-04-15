@@ -42,15 +42,15 @@ VALUES ('ASD4-435F-4464-DFF7', '25');
 INSERT INTO halls (serialNumber, numberOfSeats)
 VALUES ('AAA4-DDD4-4DDD-FFD6', '20');
 
-INSERT INTO films (title, yearOfRelease, ageRestrictions, description, poster)
+INSERT INTO films (name, yearOfRelease, ageRestrictions, description, poster)
 VALUES ('Avatar 2', '2023', '12', 'Blue mans war.', null);
-INSERT INTO films (title, yearOfRelease, ageRestrictions, description, poster)
+INSERT INTO films (name, yearOfRelease, ageRestrictions, description, poster)
 VALUES ('Cheburashka', '2023', '6', 'Family film.', null);
-INSERT INTO films (title, yearOfRelease, ageRestrictions, description, poster)
+INSERT INTO films (name, yearOfRelease, ageRestrictions, description, poster)
 VALUES ('Transformers', '2012', '16', 'Auto-bots war.', null);
-INSERT INTO films (title, yearOfRelease, ageRestrictions, description, poster)
+INSERT INTO films (name, yearOfRelease, ageRestrictions, description, poster)
 VALUES ('Astral', '2015', '18', 'Horror film.', null);
-INSERT INTO films (title, yearOfRelease, ageRestrictions, description, poster)
+INSERT INTO films (name, yearOfRelease, ageRestrictions, description, poster)
 VALUES ('Fifty Shades of Grey', '2015', '18', 'Young student likes rich Cristian Gray who likes BDSM.', null);
 
 INSERT INTO sessions (hall_id, film_id, time, ticketCost)

@@ -1,6 +1,14 @@
 <html lang="">
 <head>
     <title>User</title>
+    <style>
+        .avatar {
+            width: 200px;
+            height: 200px;
+            object-fit:cover;
+            border-radius:50%;
+        }
+    </style>
 </head>
 <body>
 <div align="center">
@@ -24,7 +32,7 @@
         </#list>
     </table>
 
-    <img src="/images/${(user.avatar)!}" alt=""/>
+    <img src="/${(user.avatar)!}" alt="" class="avatar"/>
 
     <form method="post" action="client/upload" enctype="multipart/form-data" modelAttribute="user">
         Choose a file: <input type="file" name="fileUpload" />
@@ -43,7 +51,7 @@
         </tr>
         <#list images as image>
             <tr>
-                <td><a href="/images/${image.uniqueName}">${image.fileName}</a></td>
+                <td><a href="/${(image.uniqueName)!}">${image.fileName}</a></td>
                 <td>${image.size}</td>
                 <td>${image.mime}</td>
             </tr>
