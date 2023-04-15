@@ -16,6 +16,6 @@ The **jQuery** library has a full suite of **Ajax** (Asynchronous Javascript and
 - [ex01: AJAX request to get a list of all shows according to a search query](https://github.com/rbiodies/Cinema/tree/master/ex01/Cinema)
 - [ex02: Chat room with a discussion](https://github.com/rbiodies/Cinema/tree/master/ex02/Cinema)
 ## Usage
-Read the instructions for running in the [README.txt](https://github.com/rbiodies/Cinema/blob/master/ex02/Cinema/README.txt) file
+Read the instructions for running in the [README.txt](https://github.com/rbiodies/Cinema/blob/master/ex02/Cinema/README.txt) file.
 ## Example
 https://user-images.githubusercontent.com/90090114/229898810-6e0e925c-9c6a-4663-bd39-41e90c7e78dd.mov
