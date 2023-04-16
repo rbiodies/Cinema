@@ -1,4 +1,4 @@
-# Cinema
+# <img height="32" width="32" src="https://unpkg.com/simple-icons@v6/icons/spring.svg" /> Cinema <img height="32" width="32" src="https://unpkg.com/simple-icons@v6/icons/hibernate.svg" />
 The objective of this project is to develop a web application prototype using the **Spring** stack and
 master **Hibernate** framework.
 
