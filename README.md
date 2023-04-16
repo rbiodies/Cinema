@@ -8,7 +8,7 @@ master **Hibernate** framework.
 
 [JSP](https://github.com/rbiodies/FWA/tree/main/ex02/Cinema/src/main/webapp/WEB-INF/jsp) is made for Web pages, [FTL](https://github.com/rbiodies/Cinema/tree/master/ex02/Cinema/src/main/webapp/WEB-INF/views) is a more generic templating language - it can be used to generate html, plain text, emails, etc.
 
-The **jQuery** library has a full suite of **Ajax** (Asynchronous Javascript and XML) capabilities. The functions and methods therein allow us to load data from the server without a browser page refresh.
+The <img height="20" width="20" src="https://unpkg.com/simple-icons@v6/icons/jquery.svg" /> **jQuery** library has a full suite of **Ajax** (Asynchronous Javascript and XML) capabilities. The functions and methods therein allow us to load data from the server without a browser page refresh.
 
 **WebSocket** is a thin, lightweight layer above TCP (Transmission Control Protocol). This makes it suitable for using “subprotocols” to embed messages. **STOMP** (Simple Text Oriented Messaging Protocol) is a subprotocol operating on top of the lower-level WebSocket.
 ## Descriptions
